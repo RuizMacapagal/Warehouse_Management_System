@@ -32,7 +32,7 @@ $feedback = '';
 
 // Handle add to cart
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'add') { 
-    $pid = $_POST['product_id'];
+    $pid = $_POST['product_id'];  
     $name = $_POST['product_name'];
     $category = $_POST['product_category'];
     $price = (float)$_POST['product_price'];
